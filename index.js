@@ -5,6 +5,7 @@ function ama(spy, chai) {
 
 function receivesAFunction(callback) {
   callback(arguments[1], arguments[2]);
+  
 }
 
 let spy = 'book';
@@ -15,7 +16,7 @@ function returnsANamedFunction() {
 }
 
 function returnsAnAnonymousFunction(a){
-  return function(b){
-    return a+b
-  }
+    return function(b){
+      return a+b
+    }
 } 
